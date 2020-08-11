@@ -1,13 +1,152 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+h1 {
+  margin: 0px;
+  font-family: "Sriracha", cursive;
+}
+h2 {
+  margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h3 {
+  margin: 0px;
+}
+
+h4 {
+  margin: 0px;
+}
+
+h5 {
+  margin: 0px;
+}
+
+h6 {
+  margin: 0px;
+}
+.overlay {
+  visibility: hidden;
+  width: 0vh;
+  height: 0vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all ease-in-out 500ms;
+}
+.nav {
+  z-index: 4;
+}
+.overlay.is-active {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  cursor: pointer;
+  visibility: inherit;
+}
+
+.leftnav {
+  width: 0;
+  transition: all ease 500ms;
+  visibility: hidden;
+  height: 100vh;
+  position: fixed;
+}
+
+.leftnav.is-active {
+  width: 50vh;
+  height: 100vh;
+  position: fixed;
+  transition: all ease 500ms;
+  visibility: inherit;
+}
+
+.leftnav > * {
+  display: none;
+}
+.leftnav.is-active > * {
+  display: inherit;
+}
+.topnav {
+  height: 3rem;
+  padding: 0px !important;
+}
+.toggle-icon {
+  transition: all ease 500ms;
+}
+
+.toggle-icon.is-active {
+  transition: all ease 500ms;
+  transform: rotate(90deg);
+}
+
+.toggle-arrow {
+  transition: all ease 500ms;
+  transform: translateX(-2rem);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.toggle-arrow.is-active {
+  transition: all ease 500ms;
+  transform: translateX(2rem);
+  visibility: inherit;
+  opacity: 1;
+}
+
+.cs-card-body {
+  transition: all ease 500ms;
+  height: 0vh;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cs-card-body.is-active {
+  transition: all ease 500ms;
+  height: 30vh;
+  visibility: inherit;
+  opacity: 1;
+}
+.container {
+  max-width: 90% !important;
+}
+
+.input-group {
+  align-items: center;
+}
+.dialog {
+  display: flex;
+  width: 40rem;
+  height: 20rem;
+  margin: 0 auto;
+  padding: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  flex-direction: column;
+  z-index: 4;
+}
+
+.dialogBtn {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  font-weight: bold;
+  align-self: flex-end;
+}
+.dialogText {
+  display: flex;
+  margin: auto;
+}
+.dialogOptions {
+  display: flex;
+  bottom: 0;
 }

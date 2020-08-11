@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Route } from "react-router-dom";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+//styles
+import "./App.css";
+//Components
+import TopNavbar from "./components/navbar/topNavbar";
+import LeftNavbar from "./components/navbar/leftNavbar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import HomePage from "./components/pages/homePage";
+library.add(fab, fas);
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = { leftNavActive: true };
+    this.updateAppState = this.updateAppState.bind(this);
+  }
+
+  updateAppState(stateObject) {
+    this.setState(stateObject);
+  }
+  render() {
+    return (
+      <div className="App">
+        <TopNavbar
+          updateAppState={this.updateAppState}
+          leftNavActive={this.state.leftNavActive}
+        />
+        <LeftNavbar
+          updateAppState={this.updateAppState}
+          leftNavActive={this.state.leftNavActive}
+        />
+        <Route path="/" exact render={() => <HomePage />} />
+      </div>
+    );
+  }
 }
-
 export default App;
