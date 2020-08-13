@@ -7,16 +7,23 @@ class HomePage extends Component {
   }
   render() {
     return (
-      <div>
-        <header>
-          <div>
-            <p>
-              I usally dont use headers, if your wondering why this is so out of
-              place
-            </p>
+      <div
+        className="page "
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL}/background.png)`,
+        }}
+      >
+        <header className="header m-2">
+          <div className="d-flex justify-content-end">
+            <div className="card bg-dark">
+              <p className="text-warning">
+                I usally dont use headers, if your wondering why this is so out
+                of place
+              </p>
+            </div>
           </div>
         </header>
-        <section>
+        <section className="m-3">
           <div className="container">
             <div className="card bg-dark col">
               <div className="card-body">
@@ -26,19 +33,118 @@ class HomePage extends Component {
                 </p>
                 <p className="text-light">
                   More than couple thousand years later you were born, and then
-                  i was born
+                  I was born
                 </p>
                 <p className="text-light">
-                  This site is basically my blog so, thats where i stop talking
-                  about you :)
+                  since this is my site ,thats where we are gonna stop talking
+                  about you
                 </p>
               </div>
             </div>
           </div>
         </section>
-        <footer>
-          <div>
-            <p>haha , you looked at my footer</p>
+        <section className="m-2 p-5">
+          <div className="container d-flex justify-content-end m-3">
+            <div className="d-flex justify-content-around w-100">
+              <div className="card bg-dark">
+                <div className="card-body ">
+                  <img
+                    src={process.env.PUBLIC_URL + "/hard-drive.jpg"}
+                    className="rounded float-left"
+                    alt="hdd"
+                    style={{ height: 200 }}
+                  />
+                </div>
+                <p className="text-light">
+                  the devs give some players ssds while <br /> the rest get old
+                  hard drives :(
+                  <br />
+                </p>
+              </div>
+              <div className="card bg-dark">
+                <div className="card-body">
+                  <h5 className="text-info">Chapter One: a new journey</h5>
+                  <h6 className="text-danger">Levels 0-6</h6>
+                  <p className="text-light">
+                    Unfortunately, I wasnt born as a grown man <br />
+                    like everyone else I was subjected to playing through the
+                    "life" tutorial <br />
+                    I wish some one would add a skip feature <br />
+                    For atleast the first six levels you cant do anything
+                    <br />
+                    most of my data was wiped of these levels for "Optimization"
+                    reasons
+                    <br />I think the game devs just wanted to save some money
+                    of server space
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="m-2">
+          <div className="container d-flex justify-content-center m-2">
+            <div className="card bg-dark">
+              <div className="card-body">
+                <h5 className="text-info">
+                  Chapter Two: still A bad Game , But With added features
+                </h5>
+                <h6 className="text-danger">Levels 6-13</h6>
+                <p className="text-light">
+                  After Realizing this tutorial isnt gonning to end for a while
+                  <br />
+                  And in fact will get even longer due to the edition of
+                  manditory side quests (school) <br />
+                  I, like many others decided to use our abilty "cry",
+                  <br /> to get whatever we want (100% effectiveness against
+                  parent types). <br />
+                  After a while some of us "matured" and started using other
+                  ways to get what we want.
+                  <br />
+                  While most players choose to play with the other low level
+                  noobs <br />
+                  I however didnt do that, <br />
+                  mostly do to the fact the my charisma stats were less than
+                  average, since than almost nothing has changed. <br />i spent
+                  most of these levels playing with the Logo dlc bundles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="m-3 p-4">
+          <div className="container d-flex justify-content-start m-2">
+            <div className="card bg-dark">
+              <div className="card-body">
+                <h5 className="text-info">
+                  Chapter Three: how long did you say this thing was?
+                </h5>
+                <h6 className="text-danger">Levels 13-16</h6>
+                <p className="text-light">
+                  After realizing how long this game was actually gonning to be
+                  I decided to try to get better at some of the controls,
+                  <br />
+                  While I did try getting better at them in previous levels
+                  <br />
+                  my dexterity and agility stats happen to be super low
+                  <br />
+                  while others forms of tranning were looked super fun , I
+                  decided to do speed runs with some of my party members <br />
+                  as i got better times, I also got some gliches in my player
+                  character <br />
+                  after being benched for 2 ranked seasons, I realized speed
+                  runs in the grand scheme of the game <br /> werent that
+                  important and that I had more fun playing other missions
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer className="footer mt-2">
+          <div className="d-flex justify-content-end">
+            <div className="card bg-dark">
+              <p className="text-warning">haha , you looked at my footer</p>
+            </div>
           </div>
         </footer>
       </div>
