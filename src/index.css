@@ -78,6 +78,9 @@ h6 {
 .topnav {
   height: 3rem;
   padding: 0px !important;
+  top: 0 !important;
+  position: fixed !important;
+  width: 100%;
 }
 .toggle-icon {
   transition: all ease 500ms;
@@ -121,13 +124,16 @@ h6 {
 .page {
   display: block;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background-size: cover;
   background: no-repeat center fixed;
 }
 
 .input-group {
   align-items: center;
+}
+.card {
+  word-wrap: wrap auto;
 }
 .dialog {
   display: flex;
@@ -160,4 +166,48 @@ h6 {
 .dialogOptions {
   display: flex;
   bottom: 0;
+}
+.footer {
+  bottom: 0vh;
+  position: absolute;
+}
+@media screen and (min-width: 200px) and (max-width: 360px) {
+  :root {
+    font-size: 6px;
+  }
+  .image-container {
+    max-width: 30px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 500px) {
+  :root {
+    font-size: 7px;
+  }
+  .image-container {
+    max-width: 50px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  :root {
+    font-size: 12px;
+  }
+  .image-container {
+    max-width: 150px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  :root {
+    font-size: 12px;
+  }
+  .image-container {
+    max-width: 250px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  :root {
+    font-size: 16px;
+  }
+  .image-container {
+    max-width: 300px;
+  }
 }

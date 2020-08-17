@@ -8,22 +8,12 @@ class HomePage extends Component {
   render() {
     return (
       <div
-        className="page "
+        className="page"
         style={{
           backgroundImage: `url(${process.env.PUBLIC_URL}/background.png)`,
         }}
       >
-        <header className="header m-2">
-          <div className="d-flex justify-content-end">
-            <div className="card bg-dark">
-              <p className="text-warning">
-                I usally dont use headers, if your wondering why this is so out
-                of place
-              </p>
-            </div>
-          </div>
-        </header>
-        <section className="m-3">
+        <section className="mt-5">
           <div className="container">
             <div className="card bg-dark col">
               <div className="card-body">
@@ -43,23 +33,27 @@ class HomePage extends Component {
             </div>
           </div>
         </section>
-        <section className="m-2 p-5">
+        <section className="m-2 ">
           <div className="container d-flex justify-content-end m-3">
-            <div className="d-flex justify-content-around w-100">
+            <div className="d-flex justify-content-between w-100">
               <div className="card bg-dark">
                 <div className="card-body ">
-                  <img
-                    src={process.env.PUBLIC_URL + "/hard-drive.jpg"}
-                    className="rounded float-left"
-                    alt="hdd"
-                    style={{ height: 200 }}
-                  />
+                  <p>
+                    I couldnt find any stock imagess for lego <br />
+                    so i had to make this shot and add the grey scale <br />
+                    background
+                  </p>
+                  <div className="d-flex justify-content-center">
+                    <img
+                      src={process.env.PUBLIC_URL + "/hard-drive.jpg"}
+                      className="rounded image-container"
+                      alt="hdd"
+                    />
+                  </div>
                 </div>
-                <p className="text-light">
-                  the devs give some players ssds while <br /> the rest get old
-                  hard drives :(
-                  <br />
-                </p>
+                <div className="row ml-0 ">
+                  <p className="text-light">lego is fun </p>
+                </div>
               </div>
               <div className="card bg-dark">
                 <div className="card-body">
@@ -84,69 +78,110 @@ class HomePage extends Component {
         </section>
         <section className="m-2">
           <div className="container d-flex justify-content-center m-2">
-            <div className="card bg-dark">
-              <div className="card-body">
-                <h5 className="text-info">
-                  Chapter Two: still A bad Game , But With added features
-                </h5>
-                <h6 className="text-danger">Levels 6-13</h6>
-                <p className="text-light">
-                  After Realizing this tutorial isnt gonning to end for a while
-                  <br />
-                  And in fact will get even longer due to the edition of
-                  manditory side quests (school) <br />
-                  I, like many others decided to use our abilty "cry",
-                  <br /> to get whatever we want (100% effectiveness against
-                  parent types). <br />
-                  After a while some of us "matured" and started using other
-                  ways to get what we want.
-                  <br />
-                  While most players choose to play with the other low level
-                  noobs <br />
-                  I however didnt do that, <br />
-                  mostly do to the fact the my charisma stats were less than
-                  average, since than almost nothing has changed. <br />i spent
-                  most of these levels playing with the Logo dlc bundles.
-                </p>
+            <div className="d-flex justify-content-between w-100">
+              <div className="card bg-dark">
+                <div className="card-body">
+                  <h5 className="text-info">
+                    Chapter Two: still A bad Game , But With added features
+                  </h5>
+                  <h6 className="text-danger">Levels 6-13</h6>
+                  <p className="text-light">
+                    After Realizing this tutorial isnt gonning to end for a
+                    while
+                    <br />
+                    And in fact will get even longer due to the edition of
+                    manditory side quests (school) <br />
+                    I, like many others decided to use our abilty "cry",
+                    <br /> to get whatever we want (100% effectiveness against
+                    parent types). <br />
+                    After a while some of us "matured" and started using other
+                    ways to get what we want.
+                    <br />
+                    While most players choose to play with the other low level
+                    noobs <br />
+                    I however didnt do that, <br />
+                    mostly do to the fact the my charisma stats were less than
+                    average, since than almost nothing has changed. <br />i
+                    spent most of these levels playing with the Logo dlc
+                    bundles.
+                  </p>
+                </div>
+              </div>
+              <div className="card bg-dark">
+                <div className="card-body ">
+                  <p>
+                    I couldnt find any stock imagess for lego <br />
+                    so i had to make this shot and add the grey scale <br />
+                    background
+                  </p>
+                  <div className="d-flex justify-content-center">
+                    <img
+                      src={process.env.PUBLIC_URL + "/lego.jpg"}
+                      className="rounded   image-container "
+                      alt="hdd"
+                    />
+                  </div>
+                </div>
+                <div className="row ml-0 ">
+                  <p className="text-light">lego is fun</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <section className="m-3 p-4">
           <div className="container d-flex justify-content-start m-2">
-            <div className="card bg-dark">
-              <div className="card-body">
-                <h5 className="text-info">
-                  Chapter Three: how long did you say this thing was?
-                </h5>
-                <h6 className="text-danger">Levels 13-16</h6>
-                <p className="text-light">
-                  After realizing how long this game was actually gonning to be
-                  I decided to try to get better at some of the controls,
-                  <br />
-                  While I did try getting better at them in previous levels
-                  <br />
-                  my dexterity and agility stats happen to be super low
-                  <br />
-                  while others forms of tranning were looked super fun , I
-                  decided to do speed runs with some of my party members <br />
-                  as i got better times, I also got some gliches in my player
-                  character <br />
-                  after being benched for 2 ranked seasons, I realized speed
-                  runs in the grand scheme of the game <br /> werent that
-                  important and that I had more fun playing other missions
-                </p>
+            <div className="d-flex justify-content-around w-100">
+              <div className="card bg-dark">
+                <div className="card-body ">
+                  <p>
+                    a super accurate depiction of running <br />
+                  </p>
+                  <div
+                    className="d-flex justify-content-center"
+                    style={{ background: "#222328" }}
+                  >
+                    <img
+                      src={process.env.PUBLIC_URL + "/naruto.jpg"}
+                      className="rounded image-container "
+                      alt="hdd"
+                    />
+                  </div>
+                </div>
+                <div className="row ml-0 ">
+                  <p className="text-light">
+                    i know this looks like a lot of fun but, its not
+                  </p>
+                </div>
+              </div>
+              <div className="card bg-dark">
+                <div className="card-body">
+                  <h5 className="text-info">
+                    Chapter Three: how long did you say this thing was?
+                  </h5>
+                  <h6 className="text-danger">Levels 13-16</h6>
+                  <p className="text-light">
+                    After realizing how long this game was actually gonning to
+                    be I decided to try to get better at some of the controls,
+                    <br />
+                    While I did try getting better at them in previous levels
+                    <br />
+                    my dexterity and agility stats happen to be super low
+                    <br />
+                    while others forms of tranning were looked super fun , I
+                    decided to do speed runs with some of my party members{" "}
+                    <br />
+                    as i got better times, I also got some gliches in my player
+                    character <br />
+                    after being benched for 2 ranked seasons, I realized speed
+                    runs in the grand scheme of the game <br /> werent that
+                    important and that I had more fun playing other missions
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <footer className="footer mt-2">
-          <div className="d-flex justify-content-end">
-            <div className="card bg-dark">
-              <p className="text-warning">haha , you looked at my footer</p>
-            </div>
-          </div>
-        </footer>
       </div>
     );
   }
